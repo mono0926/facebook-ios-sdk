@@ -188,6 +188,13 @@ __attribute__ ((deprecated("use logInWithPublishPermissions:fromViewController:h
 - (void)logOut;
 
 /**
+  Check whether the url is authentication url or not.
+ - Parameter url: The url to be checked
+ - Returns: YES if the url is authentication url
+ */
+- (BOOL)isAuthenticationURL:(NSURL *)url
+
+/**
  @method
 
   Issues an asynchronous renewCredentialsForAccount call to the device's Facebook account store.
